@@ -1,0 +1,81 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat,Roboto,Arial,sans-serif;
+}
+
+nav {
+    position : fixed;
+    width: 100%;
+    background-color: rgb(11 25 46);
+}
+
+.logo {
+    color: rgb(5 191 219);
+    font-family: Montserrat,Roboto,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.25rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1400px;
+    border: 1px solid;
+    padding: 20px 50px ;
+    margin : 0 auto;
+    
+}
+
+.flex-ul {
+    display: flex;
+    list-style-type: none;
+    color: rgb(227, 231, 239);
+    font: 24px;
+
+}
+.flex-ul li {
+    margin-right: .9rem;
+    line-height: 1.25rem;
+    font-size: 14px;
+    padding: .15rem 1rem;
+}
+
+.flex-ul li:hover {
+    border: 1px;
+    border-radius: 9999px;
+    background-color:rgb(5 191 219);
+    color: #0B192E;
+}
+
+#togglebar {
+    display: none;
+}
+
+.flex-ul li span {
+    color: rgb(5 191 219);
+
+}
+
+/**  HERO SECTION**/
+main {
+    height: 100vh;
+    border: 1px solid;
+}
+
+.hero-container {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: rgb(11 25 46);
+}
