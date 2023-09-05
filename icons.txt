@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="tech-stack-icons about-content">
+        <div class="column col-one">
+          <div class="tech-icon">
+            <i class="devicon-html5-plain colored icon"></i>
+            <span class="icon-name">HTML</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-css3-plain colored icon"></i>
+            <span class="icon-name">CSS</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-javascript-plain colored icon"></i>
+            <span class="icon-name">JAVASCRIPT</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-typescript-plain colored icon"></i>
+            <span class="icon-name">TYPESCRIPT</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-sass-original colored icon"></i>
+            <span class="icon-name">SASS</span>                
+          </div>
+        </div>
+        <div class="column col-two">
+          <div class="tech-icon">
+            <i class="devicon-react-original colored icon"></i>
+            <span class="icon-name">REACT</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-redux-original colored icon"></i>
+            <span class="icon-name">REDUX</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-mongodb-plain colored icon"></i>
+            <span class="icon-name">MONGODB</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-express-original colored icon express"></i>
+            <span class="icon-name">EXPRESS</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-nodejs-plain colored icon"></i>
+            <span class="icon-name">NODEJS</span>
+          </div>
+        </div>
+        <div class="column col-three">
+          <div class="tech-icon">
+            <i class="devicon-jest-plain colored icon"></i>
+            <span class="icon-name">JEST</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-git-plain colored icon"></i>
+            <span class="icon-name">GIT</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-webpack-plain colored icon"></i>
+            <span class="icon-name">WEBPACK</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-heroku-plain colored icon"></i>
+            <span class="icon-name">HEROKU</span>
+          </div>
+          <div class="tech-icon">
+            <i class="devicon-npm-original-wordmark colored icon"></i>
+            <span class="icon-name">NPM</span>
+          </div>
+</body>
+</html>
