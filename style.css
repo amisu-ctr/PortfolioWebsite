@@ -161,6 +161,7 @@ button:hover {
     .hero-container {
         padding-top: 200px;
         gap: 5%;
+       height: 100vh;
     }
     .name {
         font-size: 64px;
