@@ -12,6 +12,9 @@
     background-color:#0B192E;
     color: rgb(5 191 219);
 }
+body {
+    margin: 0;
+}
 a {
     text-decoration: none;
 }
@@ -28,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    padding: 1.5rem 9.5rem;
+ 
 }
 
 ul {
@@ -110,9 +113,7 @@ button:hover {
     display: flex;
     align-items: center;
 }
-.icon {
-    font-size: 60px;
-}
+
 .icon-name {
     color: rgb(156 163 175);
 
@@ -122,16 +123,19 @@ button:hover {
 
 
 @media screen and (max-width: 980px ) {
+    body {
+        width: 100vw;
+    }
     .menuBtn {
         display: block;
     }
     .nav-container ul {
         display: none;
+
     }
 
     .nav-container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+            padding: 20px;
 
     }
     .hero-container {
@@ -143,7 +147,7 @@ button:hover {
         width: 100vw;
         padding-left: 1.5rem;
         padding-right: 3rem;
-        padding-top: 110px;
+        padding-top: 10px;
         height: 80vh;
     }
 
@@ -155,9 +159,19 @@ button:hover {
         width: 100vw;
     }
 
+    .icon-name {
+        font-size: 13px;
+    }
+    .icon {
+        font-size: 40px;
+    }
+
 }
 
 @media screen and (min-width: 850px ) {
+    .nav-container {
+           padding: 1.5rem 9.5rem;
+    }
     .hero-container {
         padding-top: 200px;
         gap: 5%;
@@ -169,7 +183,9 @@ button:hover {
     .left-col h1 {
         font-size: 64px;
     }
-
+.icon {
+    font-size: 50px;
+}
 }
 
 
