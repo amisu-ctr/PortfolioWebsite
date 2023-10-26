@@ -54,6 +54,7 @@ li {
     flex-direction: row;
     padding-right: 8rem;
     padding-left: 8rem;
+    margin-bottom: 100px;
 }
 
 .left-col {
@@ -87,7 +88,7 @@ border-radius: 5px;
 }
 button:hover {
     background-color: rgb(5 191 219);
-    color: black;
+    color: #0B192E;;
 }
 
 .right-col {
@@ -126,13 +127,6 @@ button:hover {
     body {
         width: 100vw;
     }
-    .menuBtn {
-        display: block;
-    }
-    .nav-container ul {
-        display: none;
-
-    }
 
     .nav-container {
             padding: 20px;
@@ -165,6 +159,9 @@ button:hover {
     .icon {
         font-size: 40px;
     }
+    .projects-ctn {
+        padding-left: 10px;
+    }
 
 }
 
@@ -186,6 +183,58 @@ button:hover {
 .icon {
     font-size: 50px;
 }
+}
+
+
+.Projects h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(156 163 175);;
+
+}
+
+.projects-ctn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Projects-item {
+    width: 350px;
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.Projects-item img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.Projects-item .Pname {
+    color: white;
+}
+.svg {
+    fill: rgb(5 191 219);
+    width: 16px;
+}
+.project-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.project-name p {
+    color: white
+}
+
+.emailsvg {
+    fill: rgb(5 191 219);
+    width: 16px;
 }
 
 
