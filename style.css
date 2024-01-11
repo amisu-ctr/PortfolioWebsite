@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box;
     font-weight: bold;
+    z-index: 1;
 }
 
 body {
@@ -62,13 +63,28 @@ nav > div {
     }
 }
 
+@media (max-width: 290px) {
+    .header-container {
+        flex-direction: column;
+        padding-right: 0.2rem;
+
+        
+    }
+    .logo {
+        margin-bottom: 6px;
+            font-size: 1.2rem;
+    }
+    nav > div {
+        font-size: 0.8rem;
+        }
+    }
+
 /* gkaj */
 .hero-section {
     max-width: 73rem;
     margin-left: auto;
     margin-right: auto;
     padding: 1.3rem;
-    height: 80vh;
     padding-top: 80px;
 
     .hero-container {
@@ -100,7 +116,7 @@ nav > div {
 
 }
 
-@media (min-width: 100px) {
+@media (min-width: 1000px) {
     .hero-section {
         .hero-container {
             h1 {
@@ -117,5 +133,27 @@ nav > div {
     }
     div {
         font-size: 1.9rem
+    }
+}
+
+@media (max-width: 290px) {
+    .hero-section {
+        border: 1px solid blue;
+        padding-left: 0;
+        padding-top: 60px;
+
+        h2 {
+            line-height: 3rem;
+            font-size: 0.2rem;
+            margin: 50px 0px 22px;
+        }
+        h3 {
+            font-size: 0.2rem
+        }
+
+    }
+
+    body {
+        padding-right: 0.4rem;
     }
 }
