@@ -1,242 +1,99 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat,Roboto,Arial,sans-serif;
-    color: rgb(156 163 175);
-    background-color:#0B192E;
-    color: rgb(5 191 219);
+    font-weight: bold;
 }
+
 body {
-    margin: 0;
-}
-a {
-    text-decoration: none;
-}
-li {
-    list-style: none;
-}
-
-header {
-    position: fixed;
-    top: 0;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
- 
-}
-
-ul {
-    display: flex;
-}
-
-li {
-    margin-left: 45px;
-    font-size: 1rem
-}
-.menuBtn {
-    display: none;
-}
-
-
-.hero-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 150px;
-    flex-direction: row;
-    padding-right: 8rem;
-    padding-left: 8rem;
-    margin-bottom: 100px;
-}
-
-.left-col {
-    width: 50%;
-    display: flex;
-    flex-direction:column;
-    gap: 30px;
-}
-#hi {
-    color: rgb(5 191 219);
-    font-size: 14px;
-}
-.name {
-    color: white;
-font-family: 'Roboto Condensed', sans-serif;
-font-size:50px
-}
-.left-col h1 {
-    color: rgb(156 163 175);
-font-family: 'Roboto Condensed', sans-serif;
-}
- p {
-    color: rgb(156 163 175);
-}
-button {
-width: 100px;
-border: 2px solid rgb(5 191 219);
-width: 150px;
-padding: 11px 20px;
-border-radius: 5px;
-}
-button:hover {
-    background-color: rgb(5 191 219);
-    color: #0B192E;;
-}
-
-.right-col {
-    width: 30%;
-    padding-top: 50px;
+    padding: 10px;
+    background-color: rgb(55,65,81);
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.05rem;
 
 }
-.right-col h1 {
-    text-align: center;
-    color: rgb(156 163 175);
-    font-family: 'Roboto Condensed', sans-serif;
-
-}
-.stack-row {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding-top: 20px;
-    padding-top: 40px;
+header{
+    max-width: 73rem;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-.tech-icon {
-    display: flex;
-    align-items: center;
-}
-
-.icon-name {
-    color: rgb(156 163 175);
-
-}
-
-
-
-
-@media screen and (max-width: 980px ) {
-    body {
-        width: 100vw;
-    }
-
-    .nav-container {
-            padding: 20px;
-
-    }
-    .hero-container {
-        flex-direction: column;
-        gap: 6px;
-        padding-left: 1rem;
-    }
-    .left-col {
-        width: 100vw;
-        padding-left: 1.5rem;
-        padding-right: 3rem;
-        padding-top: 10px;
-        height: 80vh;
-    }
-
-    .left-col h1 {
-        font-size: 40px;
-    }
-    .right-col {
-        padding-top: 50px;
-        width: 100vw;
-    }
-
-    .icon-name {
-        font-size: 13px;
-    }
-    .icon {
-        font-size: 40px;
-    }
-    .projects-ctn {
-        padding-left: 10px;
-    }
-
-}
-
-@media screen and (min-width: 850px ) {
-    .nav-container {
-           padding: 1.5rem 9.5rem;
-    }
-    .hero-container {
-        padding-top: 200px;
-        gap: 5%;
-       height: 100vh;
-    }
-    .name {
-        font-size: 64px;
-    }
-    .left-col h1 {
-        font-size: 64px;
-    }
-.icon {
-    font-size: 50px;
-}
-}
-
-
-.Projects h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgb(156 163 175);;
-
-}
-
-.projects-ctn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.Projects-item {
-    width: 350px;
-    height: 300px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-
-.Projects-item img {
+.header-container {
     width: 100%;
-    border-radius: 10px;
-}
-
-.Projects-item .Pname {
-    color: white;
-}
-.svg {
-    fill: rgb(5 191 219);
-    width: 16px;
-}
-.project-name {
+    padding: 1.3rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
-}
-.project-name p {
-    color: white
-}
-
-.emailsvg {
-    fill: rgb(5 191 219);
-    width: 16px;
+    color: #D1D5DB;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -4px rgba(0, 0, 0, 0.6);
+    background-color: rgba(55,65,81, 1);
 }
 
+.logo {
+    font-size: 1.8rem;
+}
 
+nav {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: end;
+}
 
+nav > div {
+    margin-right: 13px;
+}
 
+.dot {
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+
+@media (max-width: 780px) {
+    .header-container {
+        flex-direction: column;
+        padding-top: 2px
+    }
+    .logo {
+        margin-bottom: 6px;
+            font-size: 1.5rem;
+    }
+}
+
+/* gkaj */
+.hero-section {
+    max-width: 73rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.3rem;
+    height: 80vh;
+    padding-top: 80px;
+
+    .hero-container {
+        h1 {
+            color: rgba(156,163,175, 1);
+            font-size: 1.4rem;
+        }
+        h2 {
+            font-size: 3rem;
+            color: rgba(125,211,252, 1);
+            margin: 70px 0px 37px;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: #D1D5DB;
+    
+            span {
+                color: rgba(125,211,252);
+            }
+        }
+    }
+    
+    div {
+        font-size: 1.25rem;
+        line-height: 34px;
+    }
+
+}
