@@ -12,16 +12,18 @@
 
 <body>
   <!-- Header section-->
-  <header>
+  <header >
+   <div class="max">
     <div class="header-container">
-      <div class="logo">Amisu Rahman</div>
-      <nav>
-        <div>About</div>
+      <div class="logo"><a href="#navv">Amisu Rahman</a></div>
+      <nav id="navv">
+        <div> <a href="https://www.linkedin.com/in/amisu/" target="_blank">Linkedin</a></div>
         <div class="dot">.</div>
-        <div>Projects</div>
+        <div><a href="#projects">Projects</a></div>
         <!-- <div>icon</div> -->
       </nav>
     </div>
+   </div>
   </header>
 
   <!-- Header section-->
@@ -36,26 +38,27 @@
     </div>
     <div>
       <p>
-        A Developer who enjoys solving problems with clean, maintainable code. <br> Always looking to learn new skils
-        and improve on existing knowledge.
+        A Developer who enjoys solving problems with clean, maintainable code.
+        <br />
+        Always looking to learn new skils and improve on existing knowledge.
       </p>
     </div>
   </section>
 
-  <section class="projects-section">
+  <section class="projects-section" id="projects">
     <div class="projects-container">
-      <h1 class="featured-topic">Featured projects</h1>
-      <h3>Here are some recent projects</h3>
-
+      <h1 class="featured-topic">Projects</h1>
       <div class="container">
         <div class="item">
-          <div class="img-div"><img src="pic.PNG" alt=""></div>
-          <h2 class="title">React CreditCard Validator</h2>
-          <div class="tools"><span>react</span><span>Typescript</span></div>
-          <div class="description">A React Custom Hook to provide validation and formatting for payment card input
-            fields. Written completely in TypeScript.</div>
+          <h3 class="title"><a href="#">Sort Employees</a></h3>
+          <div class="description">
+            A REST api server with Register, login, logout and CRUD enpoints for adding, retriving , changing and deleting data in a mongo Database
+          </div>
+          <p class="tools">
+            <span>Jsonwebtoken</span><span>Node</span><span>Express</span><span>Mongoose</span><span>Javascript</span>
+          </p>
           <div class="source-container">
-            <a href="">
+            <a href="https://github.com/amisu-ctr/Node.js-Express.js/tree/main/Employee%20Api">
               <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
                 <title>GitHub</title>
@@ -64,7 +67,69 @@
                 </path>
               </svg>
             </a>
-            <a href="">
+            <!-- <a href="github.com">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                <title>External Link</title>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a> -->
+          </div>
+        </div>
+
+        <div class="item">
+          <h3 class="title"><a href="#">Planner</a></h3>
+          <div class="description">
+            A web app for managing everyday tasks. Add , delete , edit and mark tasks as completed.
+           
+          </div>
+          <p class="tools">
+            <span>Node</span><span>Express</span><span>Mongoose</span><span>Javascript</span>
+          </p>
+          <div class="source-container">
+            <a href="https://github.com/amisu-ctr/Planner" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                <title>GitHub</title>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <!-- <a href="" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                <title>External Link</title>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a> -->
+          </div>
+        </div>
+
+        <div class="item">
+          <h3 class="title"><a href="#">BeatCraft </a></h3>
+          <div class="description">
+            Click / Press and enjoy the sounds. A drum machine. 
+           
+          </div>
+          <p class="tools">
+            <span>Typescript</span><span>React</span><span></span>
+          </p>
+          <div class="source-container">
+            <a href="https://github.com/amisu-ctr/BeatCraft-Fcc" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                <title>GitHub</title>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <a href="https://beatcraft.netlify.app/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
                 <title>External Link</title>
@@ -77,13 +142,16 @@
         </div>
 
         <div class="item">
-          <div class="img-div"><img src="pic.PNG" alt=""></div>
-          <h2 class="title">React CreditCard Validator</h2>
-          <div class="tools"><span>react</span><span>Typescript</span></div>
-          <div class="description">A React Custom Hook to provide validation and formatting for payment card input
-            fields. Written completely in TypeScript.</div>
+          <h3 class="title"><a href="#">Pong </a></h3>
+          <div class="description">
+            a multiplayer Pong game built with Socket.io, Node.js Express and HTML Canvas.
+           
+          </div>
+          <p class="tools">
+            <span>Socket</span><span>Express</span><span>Node</span>
+          </p>
           <div class="source-container">
-            <a href="">
+            <a href="https://github.com/amisu-ctr/BeatCraft-Fcc" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
                 <title>GitHub</title>
@@ -92,7 +160,7 @@
                 </path>
               </svg>
             </a>
-            <a href="">
+            <!-- <a href="https://github.com/amisu-ctr/Node.js-Express.js/blob/main/multiplayer%20pong/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
                 <title>External Link</title>
@@ -100,41 +168,16 @@
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
-            </a>
+            </a> -->
           </div>
-      </div>
-
-      <div class="item">
-        <div class="img-div"><img src="pic.PNG" alt=""></div>
-        <h2 class="title">React CreditCard Validator</h2>
-        <div class="tools"><span>react</span><span>Typescript</span></div>
-        <div class="description">A React Custom Hook to provide validation and formatting for payment card input fields.
-          Written completely in TypeScript.</div>
-        <div class="source-container">
-          <a href="">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-              <title>GitHub</title>
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-              </path>
-            </svg>
-          </a>
-          <a href="">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
-              <title>External Link</title>
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </a>
         </div>
+
+        
       </div>
     </div>
-    </div>
-
   </section>
+
+
 </body>
 <script src="main.js"></script>
 

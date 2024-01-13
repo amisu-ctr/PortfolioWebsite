@@ -1,10 +1,24 @@
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+  :root {
+    --project-color: rgba(156, 163, 175, 1);
+    --title-color: rgba(125, 211, 252, 1);
+    --toole-color: rgba(147, 197, 253, 0.5);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+}
 
   * {
       box-sizing: border-box;
       font-weight: bold;
-      z-index: 1;
+  }
+
+  a {
+      color: #D1D5DB;
+      text-decoration: none;
   }
 
   body {
@@ -16,16 +30,22 @@
   }
 
   header {
-      max-width: 73rem;
-      margin-left: auto;
-      margin-right: auto;
-      position: sticky;
-      top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    background-color: inherit;
+    .max {
+        max-width: 73rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
   }
 
   .header-container {
       width: 100%;
-      padding: 1.3rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       display: flex;
       justify-content: space-between;
       color: #D1D5DB;
@@ -87,9 +107,8 @@
       max-width: 73rem;
       margin-left: auto;
       margin-right: auto;
-      padding: 1.3rem;
+      padding-left: 0.5rem;
       padding-top: 80px;
-      height: 80vh;
 
       .hero-container {
           h1 {
@@ -170,74 +189,66 @@
   /* PROJECTS SECTION */
 
   .projects-section {
-      padding: 0;
-      color: rgba(156, 163, 175, 1);
-      h1 {
-        color: rgba(186,230,253);
-            }
-      .container {
-          .item {
-            z-index: -1;
-            margin-bottom: 25px;
-            border: 1px solid black;
-              .img-div {
-                height: 50%;
-                  img {
-                      width: 100%;
-                  }
-              }
-
-              .title {
-                padding: 1rem;
-                margin-bottom: 0.1rem;
-                          }
-              .tools {
-                padding-bottom: 1.7rem;
-                color: rgba(147,197,253, 0.5);
-                padding-left: 1rem;
-                span {
-                    margin-right: 0.9rem;
-                }
-              }
-
-              .description {
-                padding-bottom: 1.5rem;
-                padding-left: 1rem;
-              }
-
-              .source-container {
-                display: flex;
-                gap: 0.7rem;
-                justify-content: end;
-                padding-bottom: 2rem;
-                padding-right: 1rem;
-                  a {
-                      color: inherit;
-
-                      svg {
-                          width: 24px;
-                          height: 24px;
-                      }
-                  }
-              }
-          }
-
-      }
-  }
-
-  @media (min-width: 670px) {
-    .projects-section {
-        max-width: 73rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 1.3rem;
+    max-width: 73rem;
+    margin-left: auto;
+    margin-right: auto;
+    .projects-container {
+        padding-left: 0.5rem;
+        h1 {
+            color: #D1D5DB;
+        }
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            gap: 20px;
         }
+        .item {
+            display: grid;
+            grid-template-rows: 0fr 01fr 0fr 0fr ;
+            border: 1px solid rgba(46, 47, 49, 0.5);
+            border-radius: 9px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 4px;
+            .title {
+                color:#D1D5DB
+            }
+            .description {
+                color:#b8c2d0;
+                opacity: 0.6;
+                font-weight: lighter;
+            }
+            .tools {
+                span {
+                    font-size:medium;
+                    border-radius: 0.2rem;
+                    background-color:rgba(84, 98, 113, 0.1);
+                    padding: 2px;
+                    color:#b8c2d0;
+                    opacity: 0.8;
+                    margin-right: 2px;
+                    
+                }
+            }
+            .source-container {
+                align-self: flex-end;
+                justify-self: right;
+            }
+        }
+
     }
   }
-  @media (min-width: 1000px) {
 
+  @media (min-width: 660px) {
+    .projects-section {
+    }
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
   }
+
+  @media (min-width: 1300px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+ 
